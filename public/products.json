@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "image":"/src/images/Dell Latitude 3180.jpg", 
+        "name": "Dell Latitude 3180",
+        "category": "Dell",
+        "Price": 14500
+    },
+    {
+        "id": 2,
+        "image":"/src/images/hp-elitebook-g3.jpg", 
+        "name": "HP EliteBook 820 G3",
+        "category": "Hp",
+        "Price": 24900
+    },
+    {
+        "id": 3,
+        "image":"/src/images/lenevo-yoga-11-e.jpg", 
+        "name": "Lenovo ThinkPad Yoga 11e",
+        "category": "Lenovo",
+        "Price": 21900
+    },
+    {
+        "id": 4,
+        "image":"/src/images/hp-x2-elite.png", 
+        "name": "HP ELITE X2 Tablet i5",
+        "category": "hp",
+        "Price": 41900
+    },
+    {
+        "id": 5,
+        "image":"/src/images/hp_elitebook-840-g5.jpg", 
+        "name": "HP EliteBook 840 G4",
+        "category": "hp",
+        "Price": 33900
+    },
+    {
+        "id": 6,
+        "image":"/src/images/x1-carbon-8.jpg", 
+        "name": "Lenovo ThinkPad X1 Carbon Core i5",
+        "category": "lenevo",
+        "Price": 46900
+    },
+    {
+        "id": 7,
+        "image":"/src/images/yoga-11-e.jpg", 
+        "name": "Lenovo ThinkPad Yoga 11e",
+        "category": "lenevo",
+        "Price": 21900
+    },
+    {
+        "id": 8,
+        "image":"/src/images/3180.jpg", 
+        "name": "Dell Latitude 3180",
+        "category": "Dell",
+        "Price": 14500
+    }
+
+]
