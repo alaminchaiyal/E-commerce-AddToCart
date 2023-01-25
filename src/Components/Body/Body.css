@@ -1,4 +1,11 @@
 .body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
