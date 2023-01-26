@@ -14,12 +14,13 @@ const Body = () => {
     const addProducts = (product)=>{
         const newCart = [...cart, product];
         setCart(newCart);
+        console.log(cart);
     }
     return (
         <div className='body'>
             <div className='product-list'>
                 {
-                    products.map(product => <Product key = {product.id} product = {product} addProducts = {addProducts}></Product>)
+                    products.map(product => <Product key = {product.id} product = {product} addProducts = {addProducts} cart = {cart}></Product>)
                 }
             </div>
             <div className='addToCart'>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Product = (props) => {
-    const {product, addProducts} = props;
+    const {product, addProducts, cart} = props;
     const {image, name, category, Price} = product;
     return (
         <div>
@@ -9,7 +9,7 @@ const Product = (props) => {
             <p>Name: {name}</p>
             <small>Brand: {category}</small>
             <p>Price: {Price} </p>
-            <button onClick={() => addProducts(product)}>Add To Cart</button>
+            <button onClick={() => {if(cart.length < 5){addProducts(product)}}}>Add To Cart</button>
         </div>
     );
 };
