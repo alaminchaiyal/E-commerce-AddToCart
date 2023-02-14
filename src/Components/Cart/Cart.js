@@ -19,7 +19,7 @@ const Cart = ({cart, onDelete, randomItem}) =>{
                 }
             </div>
             <button onClick={()=>randomItem()}>Choose one for me</button><br/>
-            <button>Choose again</button>  
+            <button onClick={()=> cart.map((product) => {onDelete(product.id)})}>Choose again</button>  
         </div>
     );
 };
