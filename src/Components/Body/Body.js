@@ -14,8 +14,20 @@ const Body = () => {
     const addProducts = (product)=>{
         const newCart = [...cart, product];
         setCart(newCart);
-        console.log(cart);
     }
+    const onDelete = (id) =>{
+        setCart((existingCart) =>{
+            return existingCart.filter((item) => item.id !== id)
+        })
+    }
+    const randomItem = ()=>{
+        setCart((existingCart)=>{
+            let randomItem =  existingCart[Math.floor(Math.random()*existingCart.length)];
+            randomItem = [randomItem];
+            return randomItem;
+        })
+    }
+
     return (
         <div className='body'>
             <div className='product-list'>
@@ -24,10 +36,21 @@ const Body = () => {
                 }
             </div>
             <div className='addToCart'>
-                <Cart cart = {cart}></Cart>
+                <Cart cart = {cart} onDelete = {onDelete} randomItem = {randomItem}></Cart>
             </div>
         </div>
     );
 };
 
 export default Body;
+/*
+const removeItem = (id) => {
+            
+    const deleted = products.filter((product) => product.id !== id);
+    setProducts(deleted);
+    setTotal(products.length - 1);
+   
+    
+     alert("Se quitó un producto")
+   };
+   */
